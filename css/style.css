@@ -1,18 +1,16 @@
-
-
 body{
     background-color:   #FF8672 ;
     font-family:monospace;
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 0px; 
     color: #363636;
     }
 
 article{
-    background-color:#EFEFEF; 
-    
+    background-color:#EFEFEF;
+    padding-bottom: 25px;
 }
 
 .datos_personales{
