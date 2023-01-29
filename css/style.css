@@ -6,6 +6,7 @@ body{
     margin-top: 0px;
     margin-bottom: 0px; 
     color: #363636;
+    box-shadow: 0px 0px 15px 2px black;
     }
 
 article{
@@ -18,7 +19,6 @@ article{
     height: 100%;
     padding-top: 25px;
     padding-bottom: 25px;
-    
 }
 
 .datos_personales div {
@@ -34,6 +34,7 @@ article{
     border-radius: 50%;
     border: 6px solid #FF8672;
     margin: 30px 30px 30px 30px;
+    box-shadow: 0px 0px 10px 1px black;
 }
 
 .datos_personales .imagen {
@@ -55,6 +56,11 @@ article{
 }
 .datos_personales .descripcion {
     line-height: 20px;
+    font-size: 14px;
+}
+
+.datos_personales .contacto {
+    font-size: 14px;
 }
 
 .cabecera {
@@ -79,6 +85,7 @@ ul li {
     margin-left: 3em;
     line-height: 20px;
     margin-bottom: 10px;
+    font-size: 14px;
 }
 
 ul li::marker {
@@ -88,6 +95,7 @@ ul li::marker {
 .tema_de_investigacion p {
     line-height: 20px;
     margin-left: 39px;
+    font-size: 14px;
 }
 
 .cabecera i {
@@ -98,10 +106,17 @@ a {
     outline: none;
     text-decoration: none;
     color: #363636;
+    transition: 0.3s;
+
 }
   
 a:visited {
-    color: #f36249}
+    color: #f36249
+}
+
+a:hover {
+    color: red
+}
 
 @media (max-width: 772px) {
 
