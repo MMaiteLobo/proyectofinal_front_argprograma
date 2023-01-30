@@ -1,5 +1,9 @@
 window.addEventListener('load', function() {
-    console.log('La página ha terminado de cargarse!!');
+    console.log('La página ha terminado de cargarse');
 });
 
-console.log("hola")
+
+function mostrarLista(id) {
+    var element = document.getElementById(id);
+    element.classList.toggle("hidden")
+}

@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV M Maite Lobo</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico.svg">
-    <script src="db/person.json"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <script src="https://kit.fontawesome.com/705bccfd75.js" crossorigin="anonymous"></script></head>
-    <link rel="icon" type="image/jpg" href="/favicon.jpg"/>
 
 <body>
     
@@ -37,16 +35,16 @@
             </div>
         </section>
        
-        <section class="formacion"></div>
-                <h3 class="cabecera"><i class='fas fa-dna fa-flip' style="--fa-flip-x: 1; --fa-flip-y:0; --fa-animation-duration:3s;"></i>Formación académica</h3>
-                <ul>
+        <section class="formacion">
+            <h3 class="cabecera" onclick="mostrarLista('academica_lista')"><i class='fas fa-dna fa-flip' style="--fa-flip-x: 1; --fa-flip-y:0; --fa-animation-duration:3s;"></i>Formación académica</h3>
+                <ul id="academica_lista">
                     <li>2019 - Presente | Doctorado en Biología Molecular y Biotecnología. Universidad Nacional de San Martín</li>
                     <li>2012 - 2017 | Licenciatura en Ciencias Biológicas. Universidad Favaloro</li>
                     <li>2009 - 2011 | Bachillerato en Ciencias Naturales. Instituto General Pacheco</li>
                 </ul>
 
-            <h3 class="cabecera"><i class='fas fa-dna fa-flip' style="--fa-flip-x: 1; --fa-flip-y:0; --fa-animation-duration:3s;"></i>Formación complementaria</h3>
-                <ul>
+            <h3 class="cabecera" onclick="mostrarLista('complementaria_lista')"><i class='fas fa-dna fa-flip' style="--fa-flip-x: 1; --fa-flip-y:0; --fa-animation-duration:3s;"></i>Formación complementaria</h3>
+                <ul id="complementaria_lista">
                     <li>01/04/2018 - 30/04/2018 | Curso virtual: Herramientas para escribir, mejorar y publicar un manuscrito científico - Nivel básico -. Asociación gremial de bioquímicos GCABA y Federación de profesionales GCABA</li>
                     <li>14/05/2018 - 18/05/2018 | Curso Estadística I - Curso teórico-práctico -. IBYME (CONICET-FIBYME)</li> 
                     <li>01/04/2018 - 31/12/2019 | Formación pedagógica para el Nivel Medio. Facultad de Ciencias Humanas, Universidad del Este</li>
@@ -64,31 +62,31 @@
                     <li>29/12/2020 - 26/01/2021 | Programming for Everybody (Getting Started with Python). University of Michigan (Coursera)</li>
                     <li>09/05/2022 - 20/05/2022 | Herramientas bioinformáticas para el análisis de estructura, desorden e interacciones de proteínas. Instituto de Investigaciones Biotecnológicas, Universidad de San Martín</li> 
                 </ul>
-            <h3 class="cabecera"><i class='fas fa-dna fa-flip' style="--fa-flip-x: 1; --fa-flip-y:0; --fa-animation-duration:3s;"></i>Idiomas</h3>
-                <ul>
+            <h3 class="cabecera" onclick="mostrarLista('idiomas_lista')"><i class='fas fa-dna fa-flip' style="--fa-flip-x: 1; --fa-flip-y:0; --fa-animation-duration:3s;"></i>Idiomas</h3>
+                <ul id="idiomas_lista">
                     <li>Español. Nivel de dominio: Nativo</li>
                     <li>Inglés. Nivel de dominio: Intermedio</li>
                 </ul>          
         </section>
             
         <section class="docencia">
-            <h3 class="cabecera"><i class='fas fa-dna fa-flip' style="--fa-flip-x: 1; --fa-flip-y:0; --fa-animation-duration:3s;"></i>Docencia</h3>
-                <ul>
+            <h3 class="cabecera" onclick="mostrarLista('docencia_lista')"><i class='fas fa-dna fa-flip' style="--fa-flip-x: 1; --fa-flip-y:0; --fa-animation-duration:3s;"></i>Docencia</h3>
+                <ul id="docencia_lista">
                     <li>2016 - 2022 | Nivel secundario. Biología y Biología, Genética y Sociedad. Instituto General Pacheco</li>
                     <li>2020 - Presente | Nivel universitario. Genética General (Licenciatura en Biotecnología). Universidad Nacional de San Martín</li>
                 </ul>
         </section>
        
-        <section class="tema_de_investigacion"></div>
-            <h3 class="cabecera"><i class='fas fa-dna fa-flip' style="--fa-flip-x: 1; --fa-flip-y:0; --fa-animation-duration:3s;"></i>Resumen de tema de investigación</h3>
-                <p>
+        <section class="tema_de_investigacion">
+            <h3 class="cabecera" onclick="mostrarLista('tema_inv')"><i class='fas fa-dna fa-flip' style="--fa-flip-x: 1; --fa-flip-y:0; --fa-animation-duration:3s;"></i>Resumen de tema de investigación</h3>
+                <p id="tema_inv">
                     <span class="cursiva">Trypanosoma cruzi</span>, el agente etiológico de la enfermedad de Chagas, de gran impacto sanitario, social y económico en América Latina, presenta durante su ciclo de vida cambios morfológicos que le permiten adaptarse y proliferar en distintos nichos: insecto vector y hospedador mamífero. En el humano infectado, tras 30-60 días, se desarrolla una respuesta inmunitaria fuerte y específica, pero su capacidad para invadir rápidamente una amplia variedad de células y el despliegue simultáneo de sistemas de evasión la vuelven parcialmente efectiva. La "cubierta antigénica" de los tripomastigotes sanguíneos cumple, acá, un doble rol: interaccionar con receptores de la célula blanco pre-internalización del parásito y proteger ante los mecanismos de defensa del hospedador; y se constituye por una gruesa capa de glicoconjugados anclados por GPI, codificados, en general, por familias génicas grandes, polimórficas y de expresión diferencial entre estadios. Recientemente, profundizamos la caracterización de una familia denominada TolT, identificada en 1990. En primer lugar, se determinó que es mucho más extensa que lo reportado y a partir de sus miembros se definieron 3 grupos: TolT-A, B y C. Todos presentan homología a TolA bacterianas y secuencias típicas de localización en superficie/asociación a membrana en <span class="cursiva">T. cruzi</span> (PS y señal de anclaje por GPI). Además, poseen potenciales sitios de fosforilación, N- y O-glicosilación, 2 regiones ricas en Ala y 2 Cys conservadas, posiblemente cruciales en el plegamiento final y/o la función de TolT. Por su parte, TolT-A y B son muy similares excepto hacia su región N-terminal y predicciones de topología indican que esta región constituye el extremo distal a la membrana plasmática del parásito y podría tener consecuencias inmunológicas. Ensayos preliminares de nuestro laboratorio indican que TolT no solo constituye una familia génica mucho más compleja que lo reportado, si no que sus miembros parecen tener diferente estructura/perfil de expresión, y, posiblemente, también distinta función. En base a esto, en el presente plan proponemos: determinar la estructura de la familia de genes TolT en <span class="cursiva">T. cruzi</span> y la expresión de los distintos miembros (a nivel de ARNm y proteínas) durante el ciclo de vida del parásito, determinar la estructura antigénica de las proteínas TolT y estudiar la respuesta inmune contra ellas en pacientes infectados por <span class="cursiva">T. cruzi</span> y caracterizar funcionalmente a la familia génica TolT en <span class="cursiva">T. cruzi</span>.
                 </p>        
         </section>
 
         <section class="articulos">
-            <h3 class="cabecera"><i class='fas fa-dna fa-flip' style="--fa-flip-x: 1; --fa-flip-y:0; --fa-animation-duration:3s;"></i>Artículos publicados</h3>
-                <ul>
+            <h3 class="cabecera" onclick="mostrarLista('articulos')"><i class='fas fa-dna fa-flip' style="--fa-flip-x: 1; --fa-flip-y:0; --fa-animation-duration:3s;"></i>Artículos publicados</h3>
+                <ul id="articulos">
                     <li>Homologous expression of glycosylphosphatidyl inositol-anchored glycoproteins in <span class="cursiva">Trypanosoma cruzi</span>.
                         Autores: Virginia Balouz, Andrea C. Mesias, Camila Centeno Camean, Ivana Ducrey, Maite Mabel Lobo, Ignacio M. Durante, Gaspar E. Cánepa, Carlos A. Buscaglia, María de los Milagros Cámara.
                         Revista: ISSN: 1064-3745 - Methods in molecular biology (CLIFTON, N.J.) <a class="fa-solid fa-link" href="https://pubmed.ncbi.nlm.nih.gov/30868523/" target="_blank"></a></li>
